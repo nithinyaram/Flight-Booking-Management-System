@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search</title>
+	<link rel="stylesheet" href="table.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style(2).css">
+	<script src="js/index.js"></script>
+
+	<script type="text/javascript">
+		function ex1(){
+			document.getElementById('x1').disabled=false;
+			document.getElementById('x2').disabled=true;
+			//document.getElementById('x3').disabled=true;
+			//document.getElementById('x4').disabled=true;
+			//document.getElementById('x5').disabled=true;
+			//document.getElementById('x6').disabled=true;
+			document.getElementById("d1").style.display = "block";
+			
+			
+		}
+		function ex2(){			
+			document.getElementById('x1').disabled=true;
+			document.getElementById('x2').disabled=false;
+			//document.getElementById('x3').disabled=true;
+			//document.getElementById('x4').disabled=true;
+			//document.getElementById('x5').disabled=true;
+			//document.getElementById('x6').disabled=true;
+			document.getElementById("d1").style.display = "block";
+		}
+	</script>
+</head>
+<body background="234.jpg">
+	 <div class="d1">
+
+  <ul>
+    <li><a class="active" href="fMainpage.html">Home</a></li>
+    <li><a href="finsert.html">Insert</a></li>
+    <li><a href="fdelete.html">Delete</a></li>
+    <li><a href="fsearch.html">Serach</a></li>
+        <li><a href="findex.jsp">Show</a></li>
+  </ul>
+
+  </div>
+
+<div class="div1">
+<form action="fdeletej" method="GET">
+	
+	<table>
+		<div name="d2"  >
+		<tr><td><input type="radio" name="r1" id="r1" onclick="return ex1()" value="rr"></td><td></td><td> By Name </td><td></td><td>
+				<input type="text" id='x1' name="t1"  required><br></td></tr>
+
+		<tr><td><input type="radio" name="r1" id="r2" onclick="return ex2()" value="rr"></td><td></td><td>By Id<br></td><td></td><td>
+				<input type="text" id='x2' name="t2" required><br></td></tr>
+				
+				
+		
+					
+		</div>
+	</table>
+	<div id="d1" class="sub" style="display: none; " >
+	<input type="submit" id="b1"  style="padding:10px ; margin-left: 200px;background-color:white ;color: #87cefa ;font-weight: bold;border-color:"red" ">
+</form>
+
+
+	</div>
+</body>
+</html>

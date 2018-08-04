@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insertion</title>
+	<style>
+		table,th,td{
+      padding:10px ;
+      margin-top: 30px;
+    }
+
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #87cefa;
+      }
+
+      li {
+          float: left;
+      }
+
+      li a {
+          display: block;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          text-align: center;
+          padding: 20px 30px;
+          text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+          background-color: #3090C7;
+      }
+
+      .active {
+          background-color: #3090C7;
+      }
+		.div1{
+			background-color: #87cefa;	
+			margin-left: 400px;
+			margin-right: 400px;
+			margin-top: 100px;
+			height: 800px;
+			padding: 30px;
+			border-radius: 30px
+		}
+		table tr td{
+			padding: 10px;
+			font-size: 30px;
+			font-weight: bold;
+
+			color: white;
+			font-family: Agency FB;
+		}
+
+		input {
+			border-radius: 8px;
+			font-size: 20px;
+			color: black	;
+
+		}
+		.sub{
+			background-color: white;
+			color:  #87cefa;
+			font-weight: bold;
+			font-size: 20px;
+			width: 200px;
+		}
+	</style>
+</head>
+<body background="234.jpg">
+		 <div class="d1">
+
+  <ul>
+    <li><a class="active" href="fMainpage.html">Home</a></li>
+    <li><a href="finsert.html">Insert</a></li>
+    <li><a href="fdelete.html">Delete</a></li>
+    <li><a href="fsearch.html">Serach</a></li>
+    <li><a href="fupdate.html">Update</a></li>
+    <li><a href="findex.jsp">Show</a></li>
+    
+
+  </ul>
+
+  </div>
+	<center>
+	<div class="div1">
+		<form action="finsertj" method="GET">
+			<table>
+			<tr><td>Flight Id</td><td><input type="text" name="p1" required><br></td></tr>
+			<tr><td>Flight Name</td><td><input type="text" name="p2"  required><br></td></tr>
+			<tr><td>Source</td><td><input type="text" name="p3" required><br></td></tr>
+			<tr><td>Distination</td><td> <input type="text" name="p4" required><br></td></tr>
+			<tr><td>Distance</td><td><input type="text" name="p5" required> <br></td></tr>
+			<tr><td>Cost</td><td><input type="text" name="p6" required><br></td></tr>
+			<tr><td>Number of Seats</td><td><input type="text" name="p7" required><br></td></tr>
+			</table>
+			<input type="submit" class="sub" style="margin-top: 10px;padding: 7px; " value="Enroll">
+		</form>
+	</div>
+	</center>
+</body>
+</html>
+
